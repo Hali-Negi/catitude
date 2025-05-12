@@ -197,12 +197,17 @@ app.post("/signupSubmit", async function (req, res) {
 });
 
 app.get("/members", (req, res) => {
+  if (!req.session.name) {
+    return res.redirect("/login"); 
+  }
+
   const imgLinks = ['/cat1.jpg', '/cat2.jpg', '/cat3.jpg'];
   res.render('members', {
-      name: req.session.name || 'Guest',
-      imgLinks: imgLinks
+    name: req.session.name,
+    imgLinks: imgLinks
   });
 });
+
 
 
 app.use("/admin", sessionAuthentication, sessionAuthorization);
