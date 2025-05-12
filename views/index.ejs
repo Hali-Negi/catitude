@@ -1,0 +1,32 @@
+<%- include("templates/header") %>
+
+  <div class="card mx-auto shadow" style="max-width: 400px; margin-top: 10rem;">
+  <div class="card-body text-center p-4">
+    <h1 class="h5 fw-bold mb-2"><%= heading %></h1>
+
+    <div class="d-grid gap-1">
+      <a
+        href="<%= urls[0] %>"
+        class="btn btn-primary btn-lg"
+        role="button"
+        style="
+          --bs-btn-bg: #e83e8c;
+          --bs-btn-border-color: #e83e8c;
+          --bs-btn-hover-bg: #d63384;
+          --bs-btn-hover-border-color: #c32f76;
+        "
+      >
+        <%= btn1 %>  
+      </a>
+      <a
+        href="<%= urls[1] %>"
+        class="btn btn-primary btn-lg"
+        role="button"
+      >
+        <%= btn2 %> 
+      </a>
+    </div>
+  </div>
+</div>
+
+<%- include("templates/footer") %>
