@@ -2,13 +2,13 @@
   "name": "catitude",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/Hali-Negi/comp2537-assignment2#readme",
+  "homepage": "https://github.com/Hali-Negi/catitude#readme",
   "bugs": {
-    "url": "https://github.com/Hali-Negi/comp2537-assignment2/issues"
+    "url": "https://github.com/Hali-Negi/catitude/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hali-Negi/comp2537-assignment2.git"
+    "url": "git+https://github.com/Hali-Negi/catitude.git"
   },
   "license": "ISC",
   "author": "",
